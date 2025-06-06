@@ -5,5 +5,8 @@ uses v2 which is much improved from the original release, though obvious artifac
 
 Save button by default writes to output/extras-images/{date} directory. Uses webUI settings, not hard-coded.
 
+>[!NOTE]
+>Consider the `upscaler` branch, which adds the model to the webui upscalers list for use in *HiResFix* and the *Extras* tab instead of adding a new dedicated tab.
+
 representative example using downsampled source (208x312):
 ![](screenshot.png)
