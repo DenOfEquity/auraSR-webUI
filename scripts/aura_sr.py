@@ -804,7 +804,7 @@ class AuraSR:
             config = json.loads(config_path.read_text())
             hf_model_path = local_file.parent
         else:
-            hf_model_path = Path(snapshot_download(model_id))
+            hf_model_path = Path(snapshot_download(model_id, ignore_patterns=["*.ckpt"]))
             config = json.loads((hf_model_path / "config.json").read_text())
 
         model = cls(config)
